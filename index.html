@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Perfil profesional </title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <!-- <link rel="stylesheet" href="registro.css"> -->
+    </head>
+
+    <body>
+
+            <header id="bloqueprincipal">
+                <div>
+                    <h1> Franco Ivan Aguilar </h1>
+                    <h2> Mi pagina Web </h2>
+                </div>
+
+            </header>
+        
+        <main>
+
+            <!-- 1° section: titulo y parrafo sobre trabajos que realizo -->
+            <section>
+                
+                <article>
+                    <div>
+
+                        <h3> ¿Que tipos de creacion realizo?</h3>
+
+                        <div>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse delectus corrupti consectetur nemo id, reiciendis aspernatur sapiente dolorem ex ratione ea vitae dicta facere, adipisci rem. Unde, recusandae? Odit, tempora?</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </section>
+            <!-- 2° section : contenedores de imagenes -->
+            <section>
+                <article>
+                    <div>
+                        <h3> Las tecnologias que utilizo son </h3>
+                    </div>
+
+
+
+                     <div id="contenedorde3imagenes">               <!-- contenedor de todas las imagenes -->
+                        <div class="contenedorTituloEImagen">       <!-- contenedor de 1 imagen -->
+                            <h4>HTML</h4>
+                            <img src="assets/html.jpg" alt="icono del lenguaje html">
+                        </div>
+
+                        <div class="contenedorTituloEImagen">       <!-- contenedor de 1 imagen -->
+                            <h4>css</h4>
+                            <img src="assets/css.jpg" alt=" icono del lenguaje css">
+                        </div>
+
+                        <div class="contenedorTituloEImagen">        <!-- contenedor de 1 imagen -->
+                            <h4>JavaScript</h4>
+                            <img src="assets/JS.jpg" alt="icono del lenguaje Java script">
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+            <!-- 3° section : Formulario -->
+             <section>
+                <form action="index.html" method=""> 
+
+                    <h4> Mis actividades favoritas </h4>
+                    <label for="actividad"></label>
+                    <input type="text" name="actividad" id="actividad" required placeholder="Nombre de la actividad">
+
+                    <label for="descripcion"></label>
+                    <textarea name="descripcion" id="descripcion" placeholder="Descripcion de la actividad" required></textarea>
+
+                    <label for="Imagenactividad"></label>
+                    <input type="url" name="Imagenactividad" id="Imagenactividad" placeholder="Link de imagen" required>
+
+                    <button type="submit"> Agregar actividad </button>
+
+
+                </form>
+             </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
