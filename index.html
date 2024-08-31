@@ -5,18 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Perfil profesional </title>
         <link rel="stylesheet" href="styles/reset.css">
-        <!-- <link rel="stylesheet" href="registro.css"> -->
+        <link rel="stylesheet" href="styles/styleindex.css">
     </head>
 
     <body>
 
-            <header id="bloqueprincipal">
-                <div>
-                    <h1> Franco Ivan Aguilar </h1>
-                    <h2> Mi pagina Web </h2>
-                </div>
-
-            </header>
+        <header>
+            <div id="bloqueprincipal">
+                <h1 class="TitulosH" id="tituloPrincipal" > Franco Ivan Aguilar </h1>
+                <h2 class="TitulosH"> Mi pagina Web </h2>
+            </div>
+        </header>
         
         <main>
 
@@ -24,64 +23,82 @@
             <section>
                 
                 <article>
-                    <div>
+                    <div id="bloquesecundario">
 
-                        <h3> ¿Que tipos de creacion realizo?</h3>
+                        <h3 class="TitulosH" id="titulopresentacion"> ¿Que tipos de creacion realizo?</h3>
 
                         <div>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse delectus corrupti consectetur nemo id, reiciendis aspernatur sapiente dolorem ex ratione ea vitae dicta facere, adipisci rem. Unde, recusandae? Odit, tempora?</p>
+                        <p class="parrafopersonal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum repudiandae, sunt incidunt odit rem accusamus quos neque. A impedit iusto facere illo fuga voluptatum hic repellendus sapiente nobis consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse delectus corrupti consectetur nemo id, reiciendis aspernatur sapiente dolorem ex ratione ea vitae dicta facere, adipisci rem. Unde, recusandae? Odit, tempora?</p>
                         </div>
 
                     </div>
                 </article>
 
             </section>
+            
             <!-- 2° section : contenedores de imagenes -->
             <section>
                 <article>
-                    <div>
-                        <h3> Las tecnologias que utilizo son </h3>
-                    </div>
+                    <div id="tituloYcontenedorImagenes">
+                        <h3 class="TitulosH" id="titulocontenedor"> Las tecnologias que utilizo </h3>
+                    
 
 
 
-                     <div id="contenedorde3imagenes">               <!-- contenedor de todas las imagenes -->
-                        <div class="contenedorTituloEImagen">       <!-- contenedor de 1 imagen -->
-                            <h4>HTML</h4>
-                            <img src="assets/html.jpg" alt="icono del lenguaje html">
+                        <div id="contenedor3imagenes">               <!-- contenedor de todas las imagenes -->
+                            <div class="contenedorTitulo1Imagen">       <!-- contenedor de 1 imagen -->
+                                <h4 class="TitulosH" >HTML</h4>
+                                <img src="assets/html.jpg" alt="icono del lenguaje html">
+                            </div>
+    
+                            <div class="contenedorTitulo1Imagen" id="contenedordelcentro">       <!-- contenedor de 1 imagen -->
+                                <h4 class="TitulosH" >CSS</h4>
+                                <img src="assets/css.jpg" alt=" icono del lenguaje css">
+                            </div>
+    
+                            <div class="contenedorTitulo1Imagen">        <!-- contenedor de 1 imagen -->
+                                <h4 class="TitulosH">JavaScript</h4>
+                                <img src="assets/JS.jpg" alt="icono del lenguaje Java script">
+                            </div>
                         </div>
-
-                        <div class="contenedorTituloEImagen">       <!-- contenedor de 1 imagen -->
-                            <h4>css</h4>
-                            <img src="assets/css.jpg" alt=" icono del lenguaje css">
-                        </div>
-
-                        <div class="contenedorTituloEImagen">        <!-- contenedor de 1 imagen -->
-                            <h4>JavaScript</h4>
-                            <img src="assets/JS.jpg" alt="icono del lenguaje Java script">
-                        </div>
-
                     </div>
                 </article>
             </section>
+
             <!-- 3° section : Formulario -->
              <section>
-                <form action="index.html" method=""> 
+                <article>
+                    <div id="formulario">
+                        <form id=""> 
+                                <div class="casilleros">  <!-- actividad -->
+                                    <h4 class="TitulosH" id="tituloformulario"> Mis actividades favoritas </h4> <!-- aca tener en cuenta el margin debo ponerle 0 -->
+                                
+                                    <label for="actividad"></label>
+                                    <input type="text" name="actividad" id="actividad" required placeholder="Nombre de la actividad">
+                                </div>
+                            
+                                <div class="casilleros"> <!-- descripcion -->
+                                    <label for="descripcion"></label>
+                                    <textarea name="descripcion" id="descripcion" placeholder="Descripcion de la actividad" required></textarea>
+                                </div>
+                            
+                                <div class="casilleros">   <!-- url imagen -->
+                                    <label for="Imagenactividad"></label>
+                                    <input type="url" name="Imagenactividad" id="Imagenactividad" placeholder="Link de imagen" required>
+                                
+                                   
+                                </div>
+                                <button type="submit"> Agregar actividad </button>
+                        </form>
+                </div>  
+                </article>
 
-                    <h4> Mis actividades favoritas </h4>
-                    <label for="actividad"></label>
-                    <input type="text" name="actividad" id="actividad" required placeholder="Nombre de la actividad">
-
-                    <label for="descripcion"></label>
-                    <textarea name="descripcion" id="descripcion" placeholder="Descripcion de la actividad" required></textarea>
-
-                    <label for="Imagenactividad"></label>
-                    <input type="url" name="Imagenactividad" id="Imagenactividad" placeholder="Link de imagen" required>
-
-                    <button type="submit"> Agregar actividad </button>
-
-
-                </form>
+                                    <!-- contenedor de las tarjetas que se crean  completando el formulario -->
+                <article>
+                    <div>
+                    
+                    </div>
+                </article>
              </section>
 
         </main>

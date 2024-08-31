@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(43, 43, 43);
+}
+
+.TitulosH {
+    color: whitesmoke;
+}
+
+#tituloPrincipal {
+ font-size: xx-large;
+ padding: 0.5em;
+}
+.parrafopersonal {
+    color: white;
+}
+
+#bloqueprincipal {
+    /* border: 0.1em solid gray; */
+    width: 90vw;
+    margin-bottom: 2em;
+    margin: auto;   /* separa de los costado: debere agregar a mis otros contenedores tambien  */
+    margin-top: 1em;
+    padding: 1em;   /*genera el espacio interno de los contenidos respecto al contenedor*/
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#bloquesecundario {
+    background-color: gray;
+    border: 0.1em solid gray;
+    border-radius: 10px ; 
+    width: 90vw;
+    margin-top: 10em;
+    margin: auto;    /*genera el espacio interno de los contenidos respecto al contenedor*/
+    margin-top: 1em;
+    padding: 1em;    /*genera el espacio interno de los contenidos respecto al contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulopresentacion {
+    font-size: large;
+    padding: 0.5em;
+   }
+
+#titulocontenedor {
+    font-size: large;
+    padding: 0.5em;
+    padding-bottom: 2em;
+   }
+
+
+
+
+
+#tituloYcontenedorImagenes{
+    background-color: gray; 
+    border: 0.1em solid gray ;
+    border-radius: 10px;
+    width: 90vw;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedor3imagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 8em;
+    align-items: center;
+}
+
+.contenedorTitulo1Imagen {
+    background-color: rgb(43, 43, 43);
+    border: 0.1em solid rgb(43, 43, 43);
+    border-radius: 10px;
+    margin: auto;
+    padding: 1em 0.8em 2em 0.8em;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;      /* Centra:alinea en el centro del bloque los elementos */
+    gap: 1em;                      /*separa los elementos que contiene el bloque */
+
+}
+
+/* formulario: */
+
+
+#formulario{
+    width: 90vw;
+    background-color: gray;
+    padding: 1em ;   /*distancia el contenido de adentro sobre las lineas de su contenedor*/
+    margin: auto;   /*centra el bloque en el total de la pantalla */
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#tituloformulario {
+    margin: 0px;
+}
+
+
+/* le estoy dando ancho al casillero */
+.casilleros {
+  width: 90vw;
+  padding: 0.5em;
+}
+
+
+
